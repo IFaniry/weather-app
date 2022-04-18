@@ -1,0 +1,82 @@
+type Response {
+  current: Current
+  timezone: String
+  lat: Float
+  lon: Float
+  daily: [Daily]
+}
+
+type Daily {
+  weather: Weather
+  dt: Float
+  temp: Temp
+}
+
+type Current {
+  humidity: String
+  pressure: String
+  sunrise: String
+  sunset: String
+  wind_speed: String
+}
+
+type Weather {
+  id: ID
+  main: String
+  description: String
+  icon: String
+}
+
+type Wind {
+    speed: Float
+    deg: Float
+}
+
+type Temp {
+  night: Float
+  day: Float
+}
+
+# {
+#   "coord": {
+#     "lon": -0.1257,
+#     "lat": 51.5085
+#   },
+#   "weather": [
+#     {
+#       "id": 804,
+#       "main": "Clouds",
+#       "description": "overcast clouds",
+#       "icon": "04d"
+#     }
+#   ],
+#   "base": "stations",
+#   "main": {
+#     "temp": 288.91,
+#     "feels_like": 287.48,
+#     "temp_min": 286.25,
+#     "temp_max": 290.13,
+#     "pressure": 1019,
+#     "humidity": 36
+#   },
+#   "visibility": 10000,
+#   "wind": {
+#     "speed": 5.14,
+#     "deg": 130
+#   },
+#   "clouds": {
+#     "all": 100
+#   },
+#   "dt": 1650220080,
+#   "sys": {
+#     "type": 2,
+#     "id": 2019646,
+#     "country": "GB",
+#     "sunrise": 1650171636,
+#     "sunset": 1650221950
+#   },
+#   "timezone": 3600,
+#   "id": 2643743,
+#   "name": "London",
+#   "cod": 200
+# }
