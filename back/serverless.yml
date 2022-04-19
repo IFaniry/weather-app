@@ -1,8 +1,7 @@
-service:
-  name: willy-weather-app
+service: willy-weather-app
 # app and org for use with dashboard.serverless.com
-app: willy-weather-app
-org: tahina
+# app: xxx
+# org: xxx
 
 custom:
   webpack:

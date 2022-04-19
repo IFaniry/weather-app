@@ -1,6 +1,5 @@
 # https://www.graphql-code-generator.com/docs/guides/graphql-server-apollo-yoga
 schema: './graphql/**/*.graphql'
-documents: './graphql/**/*.graphql'
 generates:
   ./resolvers-types.ts:
     config:
